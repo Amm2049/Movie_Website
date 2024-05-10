@@ -1,0 +1,794 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+	color: white;
+}
+
+.header {
+	background-color: #021619;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	font-family: Pacifico;
+}
+
+.container {
+	background-color: #021619;
+	padding: 0 70px;
+}
+
+.logo {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.logo-color {
+	font-size: 30px;
+	padding: 10px;
+	color: cyan;
+}
+
+.logo-name {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+
+.search-button {
+	display: flex;
+	padding: 10px;
+}
+
+.search-button i {
+	font-size: 20px;
+}
+
+.search-button input {
+	width: 400px;
+	border-radius: 20px;
+	border: 1px solid white;
+	background-color: black;
+}
+
+.search-button button {
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 20px;
+	width: 120px;
+	height: 40px;
+	font-size: 12px;
+	color: white;
+}
+
+.search-button i {
+	font-size: 12px;
+}
+
+.search-button input::placeholder {
+	font-size: 14px;
+}
+
+button:hover i {
+	background-color: cyan;
+	color: black;
+}
+
+button:hover {
+	background-color: cyan;
+	color: black;
+}
+
+/* Navigation */
+
+.navi {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, #0F2027, #0F2027);
+	text-align: center;
+	overflow: hidden;
+}
+
+.navi a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 20px 30px;
+}
+
+.navi a:hover {
+	text-underline-offset: 10px;
+	text-decoration: underline;
+	color: cyan;
+}
+
+.sign {
+	background-color: black;
+}
+
+
+
+/* Body Content ----------------------------------------------------------------------- */
+
+/* Animation Image & Body First Page */
+
+.img-content {
+	height: 428px;
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+}
+
+
+.content {
+	width: 45%;
+	height: auto;
+	padding: 30px;
+	border-radius: 8px;
+	background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+	margin: 80px;
+}
+
+
+
+.allimg {
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	border: 5px solid black;
+	position: relative;
+}
+
+.line {
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	font-size: 30px;
+	font-family: Gadugi;
+	color: white;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px 5px cyan;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.imgflex {
+	width: 100%;
+	height: auto;
+	display: flex;
+	animation: slide 15s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	z-index: 1;
+}
+
+
+
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+
+	12% {
+		transform: translateX(0);
+	}
+
+
+	17% {
+		transform: translateX(-100%);
+	}
+
+	29% {
+		transform: translateX(-100%);
+	}
+
+
+	34% {
+		transform: translateX(-200%);
+	}
+
+	46% {
+		transform: translateX(-200%);
+	}
+
+
+	51% {
+		transform: translateX(-300%);
+	}
+
+	63% {
+		transform: translateX(-300%);
+	}
+
+
+	68% {
+		transform: translateX(-400%);
+	}
+
+	80% {
+		transform: translateX(-400%);
+	}
+
+
+	85% {
+		transform: translateX(-500%);
+	}
+
+	100% {
+		transform: translateX(-500%);
+	}
+}
+
+/* Second Page Movies ----------------------------------------------------------- */
+
+.herocontainer {
+	background-color: #010708;
+	margin: 0;
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.herocontainer p {
+	margin: 0;
+	color: white;
+	width: 100%;
+	padding: 20px;
+	font-size: 20px;
+	background-image: linear-gradient(to right, black, #0F2027);
+}
+
+.herocontainer p i {
+	color: cyan;
+}
+
+.divcontainer {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+}
+
+.divcontainer::before {
+	content: "";
+}
+
+.divcontainer::after {
+	content: "";
+}
+
+.mov {
+	height: 350px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 15%;
+	transition: 0.3s;
+
+}
+
+.mov:hover img {
+	opacity: 1;
+}
+
+.mov:hover {
+	transform: scale(1.1);
+}
+
+
+.mov div {
+	height: 30%;
+	background-color: black;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+	padding: 10px;
+	line-height: 1.5;
+}
+
+.mov img {
+	width: 100%;
+	height: 70%;
+	display: block;
+	padding: 0;
+	margin: 0;
+	opacity: 0.9;
+	border-radius: 8px;
+}
+
+.mov div i {
+	color: yellow;
+	font-size: 10px;
+}
+
+
+/* Series Page 3 ------------------------------------------------------------- */
+
+.indexre {
+	position: relative;
+	z-index: 2;
+}
+
+.indexre img {
+	opacity: 1;
+}
+
+.indexab {
+	z-index: 1;
+	position: absolute;
+	left: 140px;
+}
+
+.indexab div {
+	background-color: #021315;
+}
+
+.indexab:hover {
+	cursor: pointer;
+	transform: scale(1);
+}
+
+.indexab:active {
+	z-index: 2;
+	left: 121.5px;
+	opacity: 1;
+}
+
+.indexab:active div {
+	z-index: 2;
+}
+
+.indexab:active img {
+	z-index: 2;
+	opacity: 1;
+}
+
+
+.indexab-1 {
+	z-index: 0;
+	position: absolute;
+	left: 160px;
+}
+
+.indexab-1 div {
+	background-color: #0F1C1E;
+}
+
+
+.indexab-1:hover {
+	cursor: pointer;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.indexab-1:active {
+	z-index: 2;
+	left: 121.5px;
+	opacity: 1;
+}
+
+.indexab-1:active div {
+	z-index: 2;
+}
+
+.indexab-1:active img {
+	z-index: 2;
+	opacity: 1;
+}
+
+/* Attack On Titan -------------------------------------- */
+
+.indexre-1 {
+	z-index: 2;
+	position: relative;
+}
+
+.indexre-1 img {
+	opacity: 1;
+}
+
+.indexab-2 {
+	z-index: 1;
+	position: absolute;
+	left: 140px;
+}
+
+.indexab-2 div {
+	background-color: #021315;
+}
+
+.indexab-2:hover {
+	cursor: pointer;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.indexab-2:active {
+	z-index: 2;
+	left: 121.5px;
+	opacity: 1;
+}
+
+.indexab-2:active div {
+	z-index: 2;
+}
+
+.indexab-2:active img {
+	z-index: 2;
+	opacity: 1;
+}
+
+
+.indexab-3 {
+	z-index: 0;
+	position: absolute;
+	left: 160px;
+}
+
+.indexab-3 div {
+	background-color: #0F1C1E;
+}
+
+.indexab-3:hover {
+	cursor: pointer;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.indexab-3:active {
+	z-index: 2;
+	left: 121.5px;
+	opacity: 1;
+}
+
+.indexab-3:active div {
+	z-index: 2;
+}
+
+.indexab-3:active img {
+	z-index: 2;
+	opacity: 1;
+}
+
+
+
+/* Product Page 4 ---------------------------------------------------------------------- */
+
+
+.productcontainer {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url("https://images.thedirect.com/media/article_full/marvel-posters-ranked.jpg");
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+.product {
+	width: 50%;
+	height: 100%;
+	padding: 50px;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+
+.but {
+	margin: 40px auto;
+	width: 100px;
+	display: block;
+	padding: 5px;
+	border: none;
+	background-color: black;
+	border: 2px solid white;
+	transition: 0.2s;
+}
+
+
+.but:hover {
+	background-color: cyan;
+	color: black;
+	transform: scale(1.2);
+}
+
+.product i {
+	color: #7FED1E;
+}
+
+.title {
+	color: #7FED1E;
+	background-image: linear-gradient(to bottom, darkcyan 0%, rgb(0, 0, 0) 100%);
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+.first,
+.sec {
+	height: 400px;
+	background-color: rgba(0, 0, 0, 1.0);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 40px;
+}
+
+.review {
+	width: 45%;
+	height: 100%;
+}
+
+.review b {
+	color: #7FED1E;
+}
+
+.trailer {
+	width: 45%;
+	height: 100%;
+}
+
+
+/* Purchase Page 5 ------------------------------------------------------------------------- */
+
+.purchasecontainer {
+	padding-bottom: 0;
+	background-color: #041417;
+	width: 100%;
+}
+
+.form {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 5px;
+	border: 2px solid cyan;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.purchase-type {
+	display: flex;
+	justify-content: space-between
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	padding: 10px;
+	text-align: center;
+	vertical-align: center;
+	border-bottom: 1px solid #ddd;
+	height: 50px;
+	transition: 0.3s;
+}
+
+tr:hover,
+tr:hover td,
+tr:hover th {
+	background-color: cyan;
+	color: black;
+	border: none;
+}
+
+.fix {
+	background-color: cyan;
+}
+
+.fix th {
+	color: black;
+}
+
+.form i {
+	color: #7FED1E;
+}
+
+
+/* Payment 3 methods */
+
+
+.pay {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px;
+	padding: 20px;
+}
+
+.credit {
+	text-align: center;
+	width: 45%;
+	border: 2px solid white;
+}
+
+.credit div {
+	width: 100%;
+	padding: 10px;
+}
+
+.left-lable {
+	float: left;
+	font-size: 12px;
+}
+
+.label-margin {
+	margin-left: 15px;
+}
+
+.left-input {
+	width: 300px;
+	height: 40px;
+	display: block;
+	border: none;
+	background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+input::placeholder {
+	font-size: 10px;
+	padding-left: 30px;
+}
+
+.exp-secure {
+	display: flex;
+	margin-left: 5px;
+}
+
+.exp-secure div {
+	width: 50%;
+}
+
+.exp-secure .left-input {
+	width: 140px;
+}
+
+.subscribe {
+	background-color: black;
+	margin: 20px auto;
+	color: white;
+	width: 150px;
+	border: none;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.subscribe:hover {
+	background-color: cyan;
+}
+
+
+/* Ads ---------------*/
+
+.ads {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+
+
+.adsflex img {
+	border-top: 8px dashed #093B44;
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+	border-bottom: 8px dashed #093B44;
+}
+
+
+
+.adsflex {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	animation: move 40s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
+
+@keyframes move {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-510%);
+	}
+}
+
+
+/* Sign Up Page 6 ---------------------------------------------------------------------- */
+
+
+.sign-container {
+	width: 100%;
+	height: 500px;
+}
+
+.sign-content {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.sign-image {
+	background-image: url("https://assets.fontsinuse.com/static/use-media-items/135/134464/full-2160x1080/604cc48d/QueensGambit_02.png");
+	width: 60%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sign-image h1 {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to right,
+			rgba(0, 0, 0, 1.0),
+			rgba(0, 0, 0, 0.8),
+			rgba(45, 31, 31, 0.5),
+			rgba(45, 31, 31, 0), rgba(45, 31, 31, 0));
+}
+
+.sign-form {
+	width: 40%;
+	height: 100%;
+	margin-left: 80px;
+	padding: 40px;
+}
+
+.sign-form div {
+	margin: 10px;
+}
+
+
+.create {
+	margin: 20px 100px;
+	width: 200px;
+	height: 40px;
+	border-radius: 6px;
+	background-color: black;
+}
+
+.create:hover button {
+	background-color: cyan;
+}
+
+
+/* Footer ------------------------------------------------------------------------------- */
+
+.footer {
+	background-color: #021619;
+	text-align: center;
+	padding: 20px;
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+.footlist ul {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+.footlist {
+	margin-bottom: 30px;
+}
+
+li i {
+	font-size: 20px;
+}
+
+li:hover i {
+	color: cyan;
+}
+
+span {
+	margin: 10px 50px;
+}
